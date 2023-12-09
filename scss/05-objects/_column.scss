@@ -8,33 +8,39 @@
     
     &--md25{
         @include medium{
-            @include col-size(25%)
+            flex: 0 0 25%;
+            max-width: 25%;
         }
     }
     &--md33{
         @include medium{
-            @include col-size(33%)
+            flex: 0 0 33%;
+            max-width: 33%;
         }
     }
     &--md50{
         @include medium{
-            @include col-size(50%)
+            flex: 0 0 50%;
+            max-width: 50%;
         }
     }
     
     &--lg25{
         @include large{
-            @include col-size(25%)
+            flex: 0 0 25%;
+            max-width: 25%;
         }
     }
     &--lg33{
         @include large{
-            @include col-size(33%)
+            flex: 0 0 33%;
+            max-width: 33%;
         }
     }
     &--lg50{
         @include large{
-            @include col-size(50%)
+            flex: 0 0 50%;
+            max-width: 50%;
         }
     }
 }
