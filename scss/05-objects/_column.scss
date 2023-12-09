@@ -1,0 +1,40 @@
+@use '../01-settings/' as *;
+@use '../02-tools/' as *;
+
+.col {
+    width: 100%;
+    padding: 0 $gutter $gutter $gutter;
+
+    
+    &--md25{
+        @include medium{
+            @include col-size(25%)
+        }
+    }
+    &--md33{
+        @include medium{
+            @include col-size(33%)
+        }
+    }
+    &--md50{
+        @include medium{
+            @include col-size(50%)
+        }
+    }
+    
+    &--lg25{
+        @include large{
+            @include col-size(25%)
+        }
+    }
+    &--lg33{
+        @include large{
+            @include col-size(33%)
+        }
+    }
+    &--lg50{
+        @include large{
+            @include col-size(50%)
+        }
+    }
+}
