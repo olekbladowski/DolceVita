@@ -147,8 +147,8 @@ p {
 }
 @media screen and (min-width: 1240px) {
   .col--lg50 {
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 0 0 25%;
+    max-width: 25%;
   }
 }
 
@@ -236,6 +236,36 @@ p {
   padding: 0;
 }
 
+.image-box {
+  border-radius: 0.6rem;
+  box-shadow: 0 0 15px gray;
+  cursor: pointer;
+}
+.image-box:hover {
+  box-shadow: 0 0 25px gray;
+}
+.image-box__image {
+  background: url("../../assets/img/one.jpg") center/cover;
+  height: 22rem;
+  display: block;
+  border-top-left-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
+}
+.image-box__image--next {
+  background: url("../../assets/img/two.jpeg") center/cover;
+}
+@media screen and (min-width: 768px) {
+  .image-box__image {
+    height: 16rem;
+  }
+}
+.image-box__txt {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+}
+
 .site-header {
   background: url("../../assets/img/start.jpeg") center/cover fixed;
   height: 100vh;
@@ -264,6 +294,26 @@ p {
   margin: 0 auto;
   left: 0;
   right: 0;
+}
+
+.site-section {
+  min-height: 70%;
+  padding-top: 3rem;
+}
+.site-section--bg-color {
+  background-color: #504533;
+}
+
+.text-color-white {
+  color: #eff0f3;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-justify {
+  text-align: justify;
 }
 
 /*# sourceMappingURL=main.css.map */
