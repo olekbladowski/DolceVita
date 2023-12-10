@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +11,8 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Restauracja Dolce Vita</title>
 </head>
-<body>
+
+<body class="site-body">
     <header class="site-header">
         <div class="site-header__blackout blackout">
             <nav>
@@ -33,16 +35,29 @@
             <a class="site-header__button btn btn--red btn--rounded" href="#menu">Menu</a>
         </div>
     </header>
-    
+    <div class="site-body__social social">
+        <div class="social__item social__item--twitter"></div>
+        <div class="social__item social__item--youtube"></div>
+        <div class="social__item social__item--linkedin"></div>
+        <div class="social__item social__item--facebook"></div>
+    </div>
     <main>
         <section class="site-section" id="start">
             <div class="container">
                 <h2 class="heading--h2">Start</h2>
                 <div class="row">
 
-                <p class="col">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate enim corporis debitis ullam aliquid minus ex recusandae quisquam illum vel exercitationem atque iusto maiores molestiae expedita laborum fugiat esse animi, ad cupiditate consequuntur quo perferendis neque! Tempore veniam quod laboriosam numquam ipsum illo aliquid quaerat nobis consectetur incidunt sunt asperiores, dolorem reprehenderit. Porro earum, voluptas reiciendis commodi in distinctio illum maxime enim molestias, veniam dolore vitae nihil veritatis reprehenderit doloribus inventore tenetur facilis ipsum architecto ducimus laudantium natus assumenda ullam corrupti? Minima, ea nam dolorum eaque ab quaerat illum. Cumque voluptate reiciendis maxime eligendi. Dolore adipisci nisi quidem sed incidunt!</p>
+                    <p class="col">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate enim corporis
+                        debitis ullam aliquid minus ex recusandae quisquam illum vel exercitationem atque iusto maiores
+                        molestiae expedita laborum fugiat esse animi, ad cupiditate consequuntur quo perferendis neque!
+                        Tempore veniam quod laboriosam numquam ipsum illo aliquid quaerat nobis consectetur incidunt
+                        sunt asperiores, dolorem reprehenderit. Porro earum, voluptas reiciendis commodi in distinctio
+                        illum maxime enim molestias, veniam dolore vitae nihil veritatis reprehenderit doloribus
+                        inventore tenetur facilis ipsum architecto ducimus laudantium natus assumenda ullam corrupti?
+                        Minima, ea nam dolorum eaque ab quaerat illum. Cumque voluptate reiciendis maxime eligendi.
+                        Dolore adipisci nisi quidem sed incidunt!</p>
+                </div>
             </div>
-        </div>
         </section>
         <section class="site-section site-section--bg-color" id="menu">
             <div class="container">
@@ -73,7 +88,7 @@
                         </div>
                     </div>
 
-                    
+
                 </div>
             </div>
         </section>
@@ -81,28 +96,45 @@
             <div class="container">
                 <h2 class="heading--h2">Lokalizacja</h2>
                 <div class="row">
-                <p class="col"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4982.977728502068!2d-2.245838107733891!3d53.479166769915565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb1c28baf4c47%3A0x128816f87a31840d!2sSt.%20Peter&#39;s%20Square!5e0!3m2!1spl!2suk!4v1702133002256!5m2!1spl!2suk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+                    <p class="col"><iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4982.977728502068!2d-2.245838107733891!3d53.479166769915565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb1c28baf4c47%3A0x128816f87a31840d!2sSt.%20Peter&#39;s%20Square!5e0!3m2!1spl!2suk!4v1702133002256!5m2!1spl!2suk"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+                </div>
             </div>
-        </div>
         </section>
-        <section class="site-section" id="kontakt">
+        <section class="site-section site-contact" id="kontakt">
+            <div class="site-contact__blackout blackout"></div>
+            <h2 class="heading--h2 site-contact__h2">Kontakt</h2>
             <div class="container">
-                <h2 class="heading--h2">Kontakt</h2>
                 <div class="row">
-                <p class="col">
-                </p>
+                    <div class="col">
+                        <form class="site-contact__form form">
+                            <label class="form__label" for="mail">Podaj Twój e-mail</label>
+                            <input class="form__item" type="email" name="mail">
+                            <label class="form__label" for="subject">Temat wiadomości</label>
+                            <input class="form__item" name="subject">
+                            <label class="form__label" for="message">Treść</label>
+                            <textarea class="form__item" id="message" cols="15" rows="5"></textarea>
+                            <input class="form__item btn btn--outlined" type="submit" value="Wyślij">
+                        </form>
+                    </div>
+                </div>
             </div>
-        </div>
         </section>
     </main>
     <footer class="site-footer">
         <div class="container">
             <div class="row">
-                <p class="col col--md33">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iusto quos consequatur neque! Minus libero dolor aut tempore, dolorem deserunt?</p>
-                <p class="col col--md33">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iusto quos consequatur neque! Minus libero dolor aut tempore, dolorem deserunt?</p>
-                <p class="col col--md33">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iusto quos consequatur neque! Minus libero dolor aut tempore, dolorem deserunt?</p>
+                <p class="col col--md33">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iusto quos
+                    consequatur neque! Minus libero dolor aut tempore, dolorem deserunt?</p>
+                <p class="col col--md33">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iusto quos
+                    consequatur neque! Minus libero dolor aut tempore, dolorem deserunt?</p>
+                <p class="col col--md33">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iusto quos
+                    consequatur neque! Minus libero dolor aut tempore, dolorem deserunt?</p>
             </div>
         </div>
     </footer>
 </body>
+
 </html>
